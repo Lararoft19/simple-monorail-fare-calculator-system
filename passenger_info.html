@@ -1,0 +1,100 @@
+
+<html>
+  <head>
+    <title>Passenger Info</title>
+    <style>
+
+        body {
+            background-color: #e5d04b;
+        }
+
+        h1 {
+			font-family: Arial, sans-serif;
+		}
+
+        .gif {
+        width: 100px;
+        height: 100px;
+      }
+
+      /* Center the image and text */
+      .container {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .input-field {
+        margin-left: 42px;
+  }
+
+  .input-field2 {
+        margin-left: 70px;
+  }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Login</h1>
+        <img src="traingif.gif" alt="traingif"  class="gif">
+        <h2>Enter ID number and name:</h2>
+
+            <!-- link to login page-->
+            <form method="post" action="insert_details.php">
+                <!-- insert 12digit ID and strictly int -->
+                <p>ID (12 digit): <input type="text" name="passengerid" pattern="[0-9]{12}" autocomplete="off" required/></p>
+            
+                <p>Name: <input type="text"  class="input-field" name="passengername" autocomplete="off" required/></p>
+
+                <!-- submit button -->
+                <input type="submit"  class="input-field2" name="submit" value="Submit Information"/>
+      
+             </form>
+            <!-- redirect to main page if press button main page -->
+             <form method="POST" action="frontpage.html">
+                <input type="submit" value="Main Page">
+            </form>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--@Lararoft19(GitHub) Copyright (c) [2023] [thiraziz]-->
